@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "ES6",
+    "watch": true,
+    "outDir": "./dist/js",
+    "rootDir": "./src/ts",
+    "removeComments": true
+  },
+  "exclude": ["node_modules"]
+}

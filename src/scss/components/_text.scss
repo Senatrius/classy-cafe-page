@@ -1,0 +1,65 @@
+@use '../variables' as *;
+
+.hero-heading {
+  color: $clr-white-1;
+  font-size: $font-heading-1;
+  font-weight: 700;
+  font-family: 'Dancing Script', cursive;
+}
+
+.section-heading {
+  color: $clr-grey-1;
+  font-size: $font-heading-2;
+  font-weight: 900;
+  font-family: 'Poppins', sans-serif;
+  margin: 1.25rem 0;
+}
+
+.section-subheading-left {
+  color: $clr-red-1;
+  font-size: $font-subheading;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateX(50%);
+    height: 1px;
+    width: 30px;
+    background: $clr-red-1;
+  }
+}
+
+.section-subheading-center {
+  color: $clr-red-1;
+  font-size: $font-subheading;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card-heading {
+  color: $clr-black-1;
+  font-size: $font-heading-3;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+}
+
+.link {
+  text-decoration: none;
+  color: $clr-blue-1;
+}
+
+p, a, span {
+  font-weight: 400;
+  font-size: $font-regular;
+  color: $clr-grey-1;
+  line-height: 25px;
+}

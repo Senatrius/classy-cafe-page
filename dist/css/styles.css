@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero-heading {
+  color: #fff;
+  font-size: 3.375rem;
+  font-weight: 700;
+  font-family: "Dancing Script", cursive;
+}
+
+.section-heading {
+  color: #2a2a2a;
+  font-size: 1.875rem;
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+  margin: 1.25rem 0;
+}
+
+.section-subheading-left {
+  color: #fb5849;
+  font-size: 0.938rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.section-subheading-left::before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateX(50%);
+  height: 1px;
+  width: 30px;
+  background: #fb5849;
+}
+
+.section-subheading-center {
+  color: #fb5849;
+  font-size: 0.938rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.card-heading {
+  color: #000;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+.link {
+  text-decoration: none;
+  color: #0056b3;
+}
+
+p, a, span {
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #2a2a2a;
+  line-height: 25px;
+}
+
+/*# sourceMappingURL=styles.css.map */
