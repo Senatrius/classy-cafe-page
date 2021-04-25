@@ -3,8 +3,20 @@
 .hero-heading {
   color: $clr-white-1;
   font-size: $font-heading-1;
+  text-align: center;
   font-weight: 700;
   font-family: 'Dancing Script', cursive;
+}
+
+.hero-subheading {
+  color: $clr-white-1;
+  font-size: $font-subheading;
+  letter-spacing: 3px;
+  margin-right: -3px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
 }
 
 .section-heading {
@@ -12,23 +24,37 @@
   font-size: $font-heading-2;
   font-weight: 900;
   font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
   margin: 1.25rem 0;
+}
+
+.section-heading-center {
+  color: $clr-grey-1;
+  font-size: $font-heading-2;
+  font-weight: 900;
+  font-family: 'Poppins', sans-serif;
+  text-transform: none;
+  margin: 1.25rem 0;
+  text-align: center;
 }
 
 .section-subheading-left {
   color: $clr-red-1;
+  position: relative;
   font-size: $font-subheading;
   letter-spacing: 2px;
+  margin-right: -2px;
   text-transform: uppercase;
   text-align: left;
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
+  padding-left: 40px;
 
-  &::before {
+  &:before {
+    content: '';
     position: absolute;
     left: 0;
     top: 50%;
-    transform: translateX(50%);
     height: 1px;
     width: 30px;
     background: $clr-red-1;
@@ -39,6 +65,7 @@
   color: $clr-red-1;
   font-size: $font-subheading;
   letter-spacing: 2px;
+  transform: translateX(-2px);
   text-transform: uppercase;
   text-align: center;
   font-weight: 500;
@@ -62,4 +89,5 @@ p, a, span {
   font-size: $font-regular;
   color: $clr-grey-1;
   line-height: 25px;
+  font-family: 'Poppins', sans-serif;
 }

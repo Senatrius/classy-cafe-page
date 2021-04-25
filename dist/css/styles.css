@@ -6,11 +6,29 @@
   box-sizing: border-box;
 }
 
+.container {
+  width: 95%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 .hero-heading {
   color: #fff;
   font-size: 3.375rem;
+  text-align: center;
   font-weight: 700;
   font-family: "Dancing Script", cursive;
+}
+
+.hero-subheading {
+  color: #fff;
+  font-size: 0.938rem;
+  letter-spacing: 3px;
+  margin-right: -3px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
 }
 
 .section-heading {
@@ -18,23 +36,37 @@
   font-size: 1.875rem;
   font-weight: 900;
   font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
   margin: 1.25rem 0;
+}
+
+.section-heading-center {
+  color: #2a2a2a;
+  font-size: 1.875rem;
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+  text-transform: none;
+  margin: 1.25rem 0;
+  text-align: center;
 }
 
 .section-subheading-left {
   color: #fb5849;
+  position: relative;
   font-size: 0.938rem;
   letter-spacing: 2px;
+  margin-right: -2px;
   text-transform: uppercase;
   text-align: left;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
+  padding-left: 40px;
 }
-.section-subheading-left::before {
+.section-subheading-left:before {
+  content: "";
   position: absolute;
   left: 0;
   top: 50%;
-  transform: translateX(50%);
   height: 1px;
   width: 30px;
   background: #fb5849;
@@ -44,6 +76,7 @@
   color: #fb5849;
   font-size: 0.938rem;
   letter-spacing: 2px;
+  transform: translateX(-2px);
   text-transform: uppercase;
   text-align: center;
   font-weight: 500;
@@ -67,6 +100,42 @@ p, a, span {
   font-size: 0.875rem;
   color: #2a2a2a;
   line-height: 25px;
+  font-family: "Poppins", sans-serif;
+}
+
+.cta-btn {
+  display: block;
+  font-size: 0.875rem;
+  color: #fb5849;
+  background: #fff;
+  text-transform: capitalize;
+  padding: 12px 25px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+.cta-btn:hover {
+  opacity: 0.9;
+}
+
+.hero-image-prev, .hero-image-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  outline: transparent;
+  background: #fb5849;
+  opacity: 0.3;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.875rem;
+  transition: opacity 0.2s ease;
+  cursor: pointer;
+}
+.hero-image-prev:hover, .hero-image-next:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=styles.css.map */
